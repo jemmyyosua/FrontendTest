@@ -9,6 +9,8 @@ export default function Book() {
   const [books, setBooks] = useState([])
   const {title , id} = useParams()
 
+  document.title = title
+
   const detail = books.find((book) => book.title === title)
 
   const getBook = async () => {

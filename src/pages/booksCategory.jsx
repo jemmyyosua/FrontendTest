@@ -14,6 +14,8 @@ export default function Books() {
   const booksPage = 12;
   const pagesVisited = page * booksPage;
 
+  document.title = "Category - " + name
+
   const displayBooks = books.slice(pagesVisited, pagesVisited + booksPage)
 
   const getBooks = async () => {
